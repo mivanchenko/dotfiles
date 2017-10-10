@@ -91,5 +91,4 @@ map <C-F9> :emenu Encoding.Write.<TAB>
 :set enc=utf8
 
 :let mapleader='§'
-:nmap <Leader>r :source ~/bin/replacer.vim<CR>
 nnoremap <leader>o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
