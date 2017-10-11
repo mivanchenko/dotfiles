@@ -11,6 +11,18 @@ set shiftwidth=4
 set tabstop=4
 set binary
 
+" automatic word wrapping
+" ensure there is 't' in formatoptions:
+":set fo?   " :set formatoptions?
+":set fo+=t " :set formatoptions+=t
+":set fo-=l " :set formatoptions-=l
+":set tw=79 " :set textwidth=79
+" to stop wrapping: :set tw=0
+" to do a soft wrap: :set wrap linebreak nolist
+:set fo+=t
+:set fo-=l
+:set tw=79
+
 autocmd FileType python set expandtab autoindent nosmartindent backspace=indent softtabstop=4
 autocmd FileType javascript set shiftwidth=4
 autocmd FileType javascript set tabstop=4
