@@ -19,9 +19,6 @@ set binary
 ":set tw=79 " :set textwidth=79
 " to stop wrapping: :set tw=0
 " to do a soft wrap: :set wrap linebreak nolist
-:set fo+=t
-:set fo-=l
-:set tw=79
 
 autocmd FileType python set expandtab autoindent nosmartindent backspace=indent softtabstop=4
 autocmd FileType javascript set shiftwidth=4
@@ -34,8 +31,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 set listchars=tab:»·,trail:·
 
 " shift tabs using TAB or Shift+TAB
-map <tab> v>
-map <S-tab> v<
+map <tab> >>
+map <S-tab> <<
 
 map <F1> :TagbarToggle<cr>
 map <F2> :tabp<cr>
