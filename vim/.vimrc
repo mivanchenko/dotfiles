@@ -33,6 +33,7 @@ set listchars=tab:»·,trail:·
 " shift tabs using TAB or Shift+TAB
 map <tab> >>
 map <S-tab> <<
+imap <S-tab> <C-d>
 
 map <F1> :TagbarToggle<cr>
 map <F2> :tabp<cr>
