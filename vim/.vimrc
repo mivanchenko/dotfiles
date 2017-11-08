@@ -21,8 +21,7 @@ set binary
 " to do a soft wrap: :set wrap linebreak nolist
 
 autocmd FileType python set expandtab autoindent nosmartindent backspace=indent softtabstop=4
-autocmd FileType javascript set shiftwidth=4
-autocmd FileType javascript set tabstop=4
+autocmd FileType javascript set expandtab autoindent nosmartindent backspace=indent shiftwidth=2 tabstop=2 softtabstop=2
 
 " disable automatic comment insertion
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
