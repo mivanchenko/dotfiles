@@ -14,9 +14,9 @@ set binary
 " automatic word wrapping
 " ensure there is 't' in formatoptions:
 ":set fo?   " :set formatoptions?
-":set fo+=t " :set formatoptions+=t
-":set fo-=l " :set formatoptions-=l
-":set tw=79 " :set textwidth=79
+:set fo+=t " :set formatoptions+=t
+:set fo-=l " :set formatoptions-=l
+:set tw=79 " :set textwidth=79
 " to stop wrapping: :set tw=0
 " to do a soft wrap: :set wrap linebreak nolist
 
