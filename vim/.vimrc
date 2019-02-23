@@ -99,5 +99,8 @@ map <C-F9> :emenu Encoding.Write.<TAB>
 
 :set enc=utf8
 
-:let mapleader='§'
-nnoremap <leader>o :!echo `git url`/blob/`git rev-parse --abbrev-ref HEAD`/%\#L<C-R>=line('.')<CR> \| xargs open<CR><CR>
+" fuzzy file search
+set path+=**
+
+" select a block
+map vv V$%
